@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jatimulya Residence — PT Berkah Aster Raya | Klari Karawang</title>
+  <meta name="description" content="Jatimulya Residence Dusun Ciwadas Klari Karawang. Hunian modern tropis dengan Lantai Mezanin (Type Lavender 36/60 & Ruby 45/72) dan Subsidi FLPP 30/60. Bebas banjir, dekat Tol Karawang Timur." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          },
+          colors: {
+            charcoal: '#14110f',
+            ash: '#1f1916',
+            cardBg: '#1b1613',
+            ember: '#d95a2b',
+            emberDark: '#b24116',
+            goldFlame: '#f59e0b',
+            cream: '#f5efe6',
+            creamMuted: '#c9bcad'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .bonfire-ambient {
+      background: radial-gradient(circle at 50% 0%, rgba(217, 90, 43, 0.16) 0%, transparent 65%);
+    }
+    .bonfire-card {
+      background: #1b1613;
+      border: 1px solid rgba(217, 90, 43, 0.15);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .bonfire-card:hover {
+      border-color: rgba(217, 90, 43, 0.45);
+      box-shadow: 0 20px 40px -15px rgba(217, 90, 43, 0.22);
+      transform: translateY(-4px);
+    }
+    .swiper-pagination-bullet {
+      background: rgba(245, 239, 230, 0.3);
+      width: 8px;
+      height: 8px;
+      transition: all 0.3s;
+    }
+    .swiper-pagination-bullet-active {
+      background: #d95a2b !important;
+      width: 32px;
+      border-radius: 9999px;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #14110f; }
+    ::-webkit-scrollbar-thumb { background: #382c26; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #d95a2b; }
+  </style>
+</head>
+<body class="bg-charcoal text-cream font-sans selection:bg-ember selection:text-white overflow-x-hidden pb-20 sm:pb-0">
+
+  <!-- TOP RUNNING AMBIENT TICKER -->
+  <aside class="bg-ash text-creamMuted text-[11px] tracking-[0.25em] uppercase py-2.5 px-6 border-b border-ember/15 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-ember animate-pulse"></span>
+      <span>Jatimulya Residence · Dusun Ciwadas, Klari Karawang</span>
+    </div>
+    <div class="hidden md:block">
+      <span class="text-ember font-medium">Bebas Banjir</span> · 12 Menit Tol Karawang Timur · Dekat Suryacipta & KIM
+    </div>
+    <div>
+      <span class="text-goldFlame font-semibold">Tipe Mezanin Eksklusif</span>
+    </div>
+  </aside>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 bg-charcoal/90 backdrop-blur-xl border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-ember to-goldFlame flex items-center justify-center font-serif text-lg font-bold text-white shadow-lg shadow-ember/25">
+          *
+        </div>
+        <div class="leading-tight">
+          <span class="font-serif text-2xl tracking-wider text-cream font-semibold block">Berkah Aster Raya</span>
+          <span class="text-[9px] uppercase tracking-[0.3em] text-creamMuted">Jatimulya Residence Klari</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-[0.2em] font-medium text-creamMuted">
+        <a href="#koleksi" class="hover:text-ember transition-colors">Koleksi Rumah</a>
+        <a href="#denah-arsitektur" class="hover:text-ember transition-colors">Denah Mezanin</a>
+        <a href="#lokasi-maps" class="text-ember font-semibold flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-ember animate-ping"></span>
+          Lokasi & Maps
+        </a>
+        <a href="#kpr" class="hover:text-ember transition-colors">Kalkulator KPR</a>
+        <a href="#faq" class="hover:text-ember transition-colors">FAQ</a>
+      </nav>
+
+      <a href="https://wa.me/6282121920741?text=Halo%20Ibu%20Eneng%20Juwita%20(PT%20Berkah%20Aster%20Raya),%20saya%20ingin%20jadwalkan%20survei%20ke%20Jatimulya%20Residence%20Ciwadas%20Klari" 
+         target="_blank"
+         class="px-5 py-2.5 rounded-full bg-ember hover:bg-emberDark text-white text-xs font-semibold tracking-wider uppercase transition-all duration-300 shadow-lg shadow-ember/25 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-goldFlame animate-ping"></span>
+        <span>Jadwalkan Kunjungan</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION: WARM EDITORIAL WITH REAL BROSUR FACADE SLIDER -->
+  <section class="relative min-h-[90vh] bonfire-ambient pt-8 pb-16 flex flex-col justify-between">
+    <div class="max-w-7xl mx-auto px-6 w-full">
+      
+      <!-- HERO TITLE & WARM COPY -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-12">
+        <div class="lg:col-span-8 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-ember/15 border border-ember/30 text-xs uppercase tracking-widest text-ember font-semibold">
+            <span>●</span> Dusun Ciwadas · Klari Karawang
+          </div>
+          <h1 class="font-serif text-5xl sm:text-7xl lg:text-8xl font-normal leading-[0.95] tracking-tight text-cream">
+            Kehangatan Rumah,<br>
+            <span class="italic font-light text-creamMuted">Kenyamanan Mezanin.</span>
+          </h1>
+        </div>
+        <div class="lg:col-span-4 space-y-4 text-xs sm:text-sm text-creamMuted/80 font-light leading-relaxed">
+          <p>
+            Koleksi hunian resmi <strong>PT Berkah Aster Raya</strong> di Dusun Ciwadas, Klari. Keseimbangan arsitektur tropis modern, plafon tinggi dengan <strong>Lantai Mezanin</strong> fleksibel, dan lingkungan asri bebas banjir.
+          </p>
+          <div class="pt-2 flex items-center gap-6 text-[11px] uppercase tracking-wider text-cream font-medium">
+            <span>Lavender 36/60</span>
+            <span class="text-ember">/</span>
+            <span>Ruby 45/72</span>
+            <span class="text-ember">/</span>
+            <span>Subsidi 30/60</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- REAL HOUSE CAROUSEL: EXACT PHOTOS FROM PT BERKAH BROCHURE -->
+      <div class="swiper heroSwiper rounded-3xl overflow-hidden border border-ember/20 shadow-2xl h-[460px] sm:h-[540px]">
+        <div class="swiper-wrapper">
+          
+          <!-- SLIDE 1: REAL LAVENDER 36/60 FACADE -->
+          <div class="swiper-slide relative bg-cover bg-center" style="background-image: url('assets/lavender_real_facade.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent"></div>
+            <div class="relative z-10 h-full flex flex-col justify-end p-8 sm:p-12">
+              <span class="text-xs uppercase tracking-[0.25em] text-ember font-semibold block mb-1">Koleksi Komersil Mezanin</span>
+              <h3 class="font-serif text-3xl sm:text-5xl text-cream font-normal">Type LAVENDER 36/60</h3>
+              <p class="text-xs text-creamMuted max-w-lg mt-2">Fasad bernuansa hangat dengan aksen bata dan bukaan kaca lega. Dilengkapi lantai mezanin aktif untuk ruang kerja atau kamar santai.</p>
+            </div>
+          </div>
+
+          <!-- SLIDE 2: REAL RUBY 45/72 FACADE -->
+          <div class="swiper-slide relative bg-cover bg-center" style="background-image: url('assets/ruby_real_facade.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent"></div>
+            <div class="relative z-10 h-full flex flex-col justify-end p-8 sm:p-12">
+              <span class="text-xs uppercase tracking-[0.25em] text-goldFlame font-semibold block mb-1">Varian Flagship Terluas</span>
+              <h3 class="font-serif text-3xl sm:text-5xl text-cream font-normal">Type RUBY 45/72</h3>
+              <p class="text-xs text-creamMuted max-w-lg mt-2">Kavling lega 6x12m dengan atap genteng flat beton kokoh, daya 2200W, carport mobil lapang, dan mezanin ekspansif.</p>
+            </div>
+          </div>
+
+          <!-- SLIDE 3: REAL CLUSTER ENVIRONMENT -->
+          <div class="swiper-slide relative bg-cover bg-center" style="background-image: url('assets/cluster_gate_real.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent"></div>
+            <div class="relative z-10 h-full flex flex-col justify-end p-8 sm:p-12">
+              <span class="text-xs uppercase tracking-[0.25em] text-ember font-semibold block mb-1">Kawasan Klari Bebas Banjir</span>
+              <h3 class="font-serif text-3xl sm:text-5xl text-cream font-normal">Lingkungan Asri & Tertata</h3>
+              <p class="text-xs text-creamMuted max-w-lg mt-2">One gate system, jalan utama row lebar, dan saluran drainase terpadu dengan Peil Banjir resmi.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination !bottom-6"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUICK VALUE STRIP -->
+  <section class="border-y border-ember/15 bg-ash py-8">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="border-r border-white/5 last:border-r-0">
+        <span class="block font-serif text-4xl text-ember font-normal">12 Menit</span>
+        <span class="text-[11px] uppercase tracking-wider text-creamMuted">Tol Karawang Timur</span>
+      </div>
+      <div class="border-r border-white/5 last:border-r-0">
+        <span class="block font-serif text-4xl text-cream font-normal">15 Menit</span>
+        <span class="text-[11px] uppercase tracking-wider text-creamMuted">Kawasan Suryacipta / KIM</span>
+      </div>
+      <div class="border-r border-white/5 last:border-r-0">
+        <span class="block font-serif text-4xl text-cream font-normal">Lantai Mezanin</span>
+        <span class="text-[11px] uppercase tracking-wider text-creamMuted">Plafon Tinggi 4.5 Meter</span>
+      </div>
+      <div>
+        <span class="block font-serif text-4xl text-goldFlame font-normal">Bebas Banjir</span>
+        <span class="text-[11px] uppercase tracking-wider text-creamMuted">Peil No. 503/3707/1089</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. KOLEKSI UNIT RESMI -->
+  <section id="koleksi" class="max-w-7xl mx-auto px-6 py-24 border-b border-ember/10">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4">
+      <div>
+        <span class="text-xs uppercase tracking-[0.3em] font-semibold text-ember block mb-2">Varian Pilihan Resmi</span>
+        <h2 class="font-serif text-4xl sm:text-5xl text-cream">Tipe Unit Jatimulya Residence</h2>
+      </div>
+      <p class="text-xs sm:text-sm text-creamMuted max-w-md font-light">
+        Foto dan spesifikasi disesuaikan langsung dengan dokumen brosur resmi PT Berkah Aster Raya.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- CARD 1: TYPE LAVENDER 36/60 -->
+      <article class="bonfire-card rounded-3xl overflow-hidden flex flex-col justify-between">
+        <div>
+          <div class="h-60 overflow-hidden relative">
+            <img src="assets/lavender_real_facade.jpg" alt="Fasad Type Lavender 36/60" class="w-full h-full object-cover">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-charcoal/80 backdrop-blur-md text-[10px] uppercase font-bold text-ember border border-ember/20">
+              Komersil Mezanin
+            </span>
+            <span class="absolute bottom-4 right-4 px-3 py-1 rounded-full bg-ember text-white font-mono text-xs font-semibold shadow-md">
+              81 Unit
+            </span>
+          </div>
+
+          <div class="p-8 pb-4">
+            <div class="flex justify-between items-baseline mb-4 border-b border-white/10 pb-3">
+              <h3 class="font-serif text-3xl text-cream">Type LAVENDER</h3>
+              <span class="font-serif text-xl text-goldFlame font-semibold">36 / 60</span>
+            </div>
+
+            <p class="text-xs text-creamMuted/80 mb-6 font-light leading-relaxed">
+              Inovasi ruang tumbuh dengan lantai mezanin aktif. Area atas dapat difungsikan sebagai ruang kerja pribadi, studio santai, atau kamar tidur tambahan.
+            </p>
+
+            <div class="space-y-2.5 text-xs border-y border-white/10 py-4 mb-2">
+              <div class="flex justify-between"><span class="text-creamMuted">Luas Bangunan / Tanah:</span> <strong>36 m² / 60 m² (6 x 10)</strong></div>
+              <div class="flex justify-between"><span class="text-creamMuted">Lantai Mezanin:</span> <strong class="text-ember font-semibold">Tersedia (Lt. 2)</strong></div>
+              <div class="flex justify-between"><span class="text-creamMuted">Daya Listrik:</span> <strong>1300 Watt</strong></div>
+              <div class="flex justify-between"><span class="text-creamMuted">Kamar Tidur / Mandi:</span> <strong>2 Kamar / 1 KM</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-8 pt-0">
+          <a href="#kpr" onclick="setKprPrice(325000000)" class="block w-full py-3.5 rounded-2xl bg-ash hover:bg-ember text-cream text-[11px] uppercase tracking-[0.2em] font-semibold text-center transition-colors">
+            Simulasikan Lavender →
+          </a>
+        </div>
+      </article>
+
+      <!-- CARD 2: TYPE RUBY 45/72 -->
+      <article class="bonfire-card rounded-3xl overflow-hidden flex flex-col justify-between border-ember/30 relative">
+        <span class="absolute top-4 right-4 z-10 px-3 py-1 rounded-full bg-ember text-white font-serif text-[11px] uppercase tracking-wider shadow-lg">
+          Varian Flagship
+        </span>
+
+        <div>
+          <div class="h-60 overflow-hidden relative">
+            <img src="assets/ruby_real_facade.jpg" alt="Fasad Type Ruby 45/72" class="w-full h-full object-cover">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-charcoal/80 backdrop-blur-md text-[10px] uppercase font-bold text-goldFlame border border-ember/20">
+              Flagship Mezanin
+            </span>
+            <span class="absolute bottom-4 right-4 px-3 py-1 rounded-full bg-goldFlame text-charcoal font-mono text-xs font-bold shadow-md">
+              108 Unit
+            </span>
+          </div>
+
+          <div class="p-8 pb-4">
+            <div class="flex justify-between items-baseline mb-4 border-b border-white/10 pb-3">
+              <h3 class="font-serif text-3xl text-cream">Type RUBY</h3>
+              <span class="font-serif text-xl text-goldFlame font-semibold">45 / 72</span>
+            </div>
+
+            <p class="text-xs text-creamMuted/80 mb-6 font-light leading-relaxed">
+              Unit terlengkap dengan dimensi kavling lega 6x12m. Penutup atap genteng flat beton kokoh, daya 2200W, dan halaman belakang lapang untuk taman hijau.
+            </p>
+
+            <div class="space-y-2.5 text-xs border-y border-white/10 py-4 mb-2">
+              <div class="flex justify-between"><span class="text-creamMuted">Luas Bangunan / Tanah:</span> <strong>45 m² / 72 m² (6 x 12)</strong></div>
+              <div class="flex justify-between"><span class="text-creamMuted">Lantai Mezanin:</span> <strong class="text-ember font-semibold">Ekspansif (Lt. 2)</strong></div>
+              <div class="flex justify-between"><span class="text-creamMuted">Daya Listrik:</span> <strong>2200 Watt</strong></div>
+              <div class="flex justify-between"><span class="text-creamMuted">Penutup Atap:</span> <strong>Genteng Flat Beton</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-8 pt-0">
+          <a href="#kpr" onclick="setKprPrice(410000000)" class="block w-full py-3.5 rounded-2xl bg-ember hover:bg-emberDark text-white text-[11px] uppercase tracking-[0.2em] font-semibold text-center transition-colors shadow-lg shadow-ember/20">
+            Simulasikan Ruby →
+          </a>
+        </div>
+      </article>
+
+      <!-- CARD 3: SUBSIDI FLPP 30/60 -->
+      <article class="bonfire-card rounded-3xl overflow-hidden flex flex-col justify-between">
+        <div>
+          <div class="h-60 overflow-hidden relative">
+            <img src="assets/subsidi_facade_real.jpg" alt="Fasad Subsidi 30/60" class="w-full h-full object-cover">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-charcoal/80 backdrop-blur-md text-[10px] uppercase font-bold text-cream border border-white/10">
+              Subsidi Pemerintah
+            </span>
+            <span class="absolute bottom-4 right-4 px-3 py-1 rounded-full bg-ash text-cream font-mono text-xs font-semibold shadow-md">
+              450 Unit
+            </span>
+          </div>
+
+          <div class="p-8 pb-4">
+            <div class="flex justify-between items-baseline mb-4 border-b border-white/10 pb-3">
+              <h3 class="font-serif text-3xl text-cream">Tipe SUBSIDI</h3>
+              <span class="font-serif text-xl text-cream font-semibold">30 / 60</span>
+            </div>
+
+            <p class="text-xs text-creamMuted/80 mb-6 font-light leading-relaxed">
+              Solusi hunian pertama dengan dukungan program resmi FLPP. Angsuran bunga tetap (flat 5%) hingga lunas tanpa khawatir kenaikan suku bunga bank.
+            </p>
+
+            <div class="space-y-2.5 text-xs border-y border-white/10 py-4 mb-2">
+              <div class="flex justify-between"><span class="text-creamMuted">Luas Bangunan / Tanah:</span> <strong>30 m² / 60 m²</strong></div>
+              <div class="flex justify-between"><span class="text-creamMuted">Skema Bunga:</span> <strong class="text-cream font-semibold">Flat 5% Bersubsidi</strong></div>
+              <div class="flex justify-between"><span class="text-creamMuted">Estimasi Angsuran:</span> <strong>Mulai Rp 1,1 Jt / Bln</strong></div>
+              <div class="flex justify-between"><span class="text-creamMuted">Legalitas:</span> <strong>Sertifikat Siap Balik Nama</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-8 pt-0">
+          <a href="#kpr" onclick="setKprPrice(185000000)" class="block w-full py-3.5 rounded-2xl bg-ash hover:bg-ember text-cream text-[11px] uppercase tracking-[0.2em] font-semibold text-center transition-colors">
+            Simulasikan Subsidi →
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 3. VISUALISASI RUANG & DENAH MEZANIN RESMI -->
+  <section id="denah-arsitektur" class="max-w-7xl mx-auto px-6 py-24 border-b border-ember/10">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-xs uppercase tracking-[0.3em] font-semibold text-ember block mb-2">Denah & Arsitektur Resmi</span>
+      <h2 class="font-serif text-4xl sm:text-5xl text-cream">Tata Ruang & Konsep Mezanin</h2>
+      <p class="text-xs sm:text-sm text-creamMuted mt-2 font-light">
+        Pelajari tata letak denah resmi dua lantai (Lantai Dasar & Mezanin) yang tercantum langsung pada dokumen teknis Jatimulya Residence.
+      </p>
+
+      <!-- Tab Switcher: Lavender vs Ruby -->
+      <div class="inline-flex p-1 bg-ash rounded-2xl border border-ember/20 mt-8">
+        <button id="tab-plan-lavender" onclick="switchPlan('lavender')" class="px-5 py-2.5 rounded-xl bg-ember text-white font-serif text-xs uppercase tracking-wider transition-all shadow-md">
+          Denah Type Lavender 36/60
+        </button>
+        <button id="tab-plan-ruby" onclick="switchPlan('ruby')" class="px-5 py-2.5 rounded-xl text-creamMuted hover:text-white font-serif text-xs uppercase tracking-wider transition-all">
+          Denah Type Ruby 45/72
+        </button>
+      </div>
+    </div>
+
+    <!-- Architectural Plan Container -->
+    <div class="bonfire-card rounded-3xl p-8 sm:p-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Left: Real Blueprint / Plan Scan -->
+      <div class="lg:col-span-6 bg-black/40 rounded-2xl p-4 border border-white/10 flex items-center justify-center">
+        <img id="plan-img" src="assets/plan_lavender_crop.jpg" alt="Denah Resmi Jatimulya Residence" class="w-full h-auto max-h-[520px] object-contain rounded-xl shadow-2xl">
+      </div>
+
+      <!-- Right: Detailed Architectural Layout Breakdown -->
+      <div class="lg:col-span-6 space-y-6">
+        <div>
+          <span id="plan-badge" class="text-xs font-mono uppercase tracking-widest text-ember font-semibold block mb-1">
+            KOMERSIL MEZZANINE · KAVLING 6 x 10 M
+          </span>
+          <h3 id="plan-title" class="font-serif text-3xl sm:text-4xl text-cream leading-tight">
+            Tata Letak Type LAVENDER 36/60
+          </h3>
+          <p id="plan-desc" class="text-xs sm:text-sm text-creamMuted mt-3 font-light leading-relaxed">
+            Pembagian ruang terintegrasi memaksimalkan sirkulasi udara dan cahaya alami tanpa sekat masif yang mempersempit ruangan.
+          </p>
+        </div>
+
+        <div class="space-y-4 pt-2">
+          <div class="p-4 rounded-2xl bg-cardBg border border-white/5 space-y-1">
+            <div class="flex items-center justify-between text-xs">
+              <strong class="text-cream font-semibold flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-ember"></span>
+                Lantai Dasar (Ground Floor)
+              </strong>
+              <span id="plan-spec-lt1" class="font-mono text-creamMuted text-[11px]">Teras, Carport, 2 K. Tidur, 1 K. Mandi</span>
+            </div>
+            <p id="plan-detail-lt1" class="text-[11px] text-creamMuted/70 font-light leading-relaxed">
+              Carport mobil (4.5 meter) berdampingan dengan taman depan. Ruang keluarga terbuka mengalir ke ruang makan dan akses dapur belakang.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-cardBg border border-white/5 space-y-1">
+            <div class="flex items-center justify-between text-xs">
+              <strong class="text-cream font-semibold flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-goldFlame"></span>
+                Lantai Mezanin (Upper Mezzanine)
+              </strong>
+              <span id="plan-spec-lt2" class="font-mono text-goldFlame text-[11px]">Ceiling 4.5 Meter + Railing Aman</span>
+            </div>
+            <p id="plan-detail-lt2" class="text-[11px] text-creamMuted/70 font-light leading-relaxed">
+              Area mezanin melayang di atas ruang keluarga. Memberikan ruang privat tambahan tanpa menambah beban biaya konstruksi 2 lantai penuh.
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-2 flex flex-wrap gap-4 items-center">
+          <a id="btn-wa-denah" href="https://wa.me/6282121920741?text=Halo%20Ibu%20Eneng%20Juwita%20(PT%20Berkah%20Aster%20Raya),%20saya%20ingin%20tanya%20detail%20denah%20Type%20Lavender%2036/60" 
+             target="_blank" 
+             class="px-6 py-3 rounded-full bg-ember hover:bg-emberDark text-white text-xs font-semibold tracking-wider uppercase transition-all shadow-lg shadow-ember/20">
+            Tanya Ukuran Ruangan
+          </a>
+          <span class="text-xs font-mono text-creamMuted">Dokumen Teknis Asli Brosur BAR</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. LOKASI PRESISI & INTERACTIVE GOOGLE MAPS LANGSUNG KE JATIMULYA KLARI -->
+  <section id="lokasi-maps" class="max-w-7xl mx-auto px-6 py-24 border-b border-ember/10">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs uppercase tracking-[0.3em] font-semibold text-ember block mb-2">Akses & Titik Lokasi Resmi</span>
+      <h2 class="font-serif text-4xl sm:text-5xl text-cream">Peta Lokasi Jatimulya Residence</h2>
+      <p class="text-xs sm:text-sm text-creamMuted mt-2 font-light">
+        Titik koordinat mengarah langsung ke kawasan <strong>Desa Jatimulya, Dusun Ciwadas, Kec. Klari, Karawang</strong>. Terletak di koridor emas penghubung Karawang Timur, Stasiun Kereta, dan kawasan industri Suryacipta / KIM.
+      </p>
+    </div>
+
+    <!-- MAPS & ROUTE GRID -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+      
+      <!-- GOOGLE MAPS LIVE PIN LANGSUNG JATIMULYA (SPAN 8) -->
+      <div class="lg:col-span-8 bonfire-card rounded-3xl overflow-hidden p-3 shadow-2xl flex flex-col justify-between">
+        <div class="rounded-2xl overflow-hidden w-full h-[450px] sm:h-[500px] border border-white/10 relative">
+          <!-- Google Maps Embed mengarah presisi ke Jatimulya Klari Karawang -->
+          <iframe 
+            src="https://maps.google.com/maps?q=Jatimulya%2C%20Klari%2C%20Karawang%2C%20Jawa%20Barat&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 text-xs">
+          <div class="flex items-center gap-2 text-creamMuted">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+            <span>Titik Peta: <strong>Desa Jatimulya, Dusun Ciwadas, Kec. Klari, Kab. Karawang</strong></span>
+          </div>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Jatimulya+Klari+Karawang" 
+             target="_blank" 
+             class="px-5 py-2.5 rounded-xl bg-ember hover:bg-emberDark text-white text-[11px] font-semibold uppercase tracking-wider transition-colors flex items-center gap-2 shadow-lg shadow-ember/20">
+            <span>Panduan Rute (Google Maps)</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- RADIUS & CONNECTIVITY HIGHLIGHTS (SPAN 4) -->
+      <div class="lg:col-span-4 space-y-4 flex flex-col justify-between">
+        
+        <div class="bonfire-card rounded-3xl p-6 space-y-5">
+          <span class="text-xs uppercase tracking-[0.25em] text-goldFlame font-semibold block">Estimasi Waktu Tempuh</span>
+          
+          <div class="space-y-4 text-xs">
+            <div class="p-3.5 rounded-2xl bg-cardBg border border-white/5 flex items-center justify-between">
+              <div>
+                <strong class="text-cream block">Gerbang Tol Karawang Timur</strong>
+                <span class="text-[11px] text-creamMuted">Akses Tol Jakarta-Cikampek</span>
+              </div>
+              <span class="font-serif text-xl text-ember font-bold">± 12 Mnt</span>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-cardBg border border-white/5 flex items-center justify-between">
+              <div>
+                <strong class="text-cream block">Kawasan Suryacipta & KIM</strong>
+                <span class="text-[11px] text-creamMuted">Pusat Industri Karawang Timur</span>
+              </div>
+              <span class="font-serif text-xl text-ember font-bold">± 15 Mnt</span>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-cardBg border border-white/5 flex items-center justify-between">
+              <div>
+                <strong class="text-cream block">Stasiun Klari & Kosambi</strong>
+                <span class="text-[11px] text-creamMuted">Kereta Commuter Line & Lokal</span>
+              </div>
+              <span class="font-serif text-xl text-goldFlame font-bold">± 10 Mnt</span>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-cardBg border border-white/5 flex items-center justify-between">
+              <div>
+                <strong class="text-cream block">Fasilitas Umum & Niaga</strong>
+                <span class="text-[11px] text-creamMuted">Pasar Kosambi, RS & Sekolah</span>
+              </div>
+              <span class="font-serif text-xl text-emerald-400 font-bold">± 8 Mnt</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SITEPLAN DOCUMENT CARD -->
+        <div class="bonfire-card rounded-3xl p-6 space-y-3">
+          <div class="flex justify-between items-center text-xs">
+            <span class="text-cream font-serif text-base font-semibold">Dokumen Siteplan Resmi</span>
+            <span class="text-[10px] text-creamMuted font-mono">503/3327/981/PR/2023</span>
+          </div>
+          <div class="rounded-xl overflow-hidden border border-white/10 bg-white">
+            <img src="assets/siteplan_clean.jpg" alt="Dokumen Asli Siteplan Jatimulya Residence" class="w-full h-auto object-cover">
+          </div>
+          <p class="text-[11px] text-creamMuted/70 font-light">
+            Pengesahan siteplan resmi oleh dinas perizinan untuk kawasan perumahan terpadu.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. REAL-TIME WARM KPR SIMULATION -->
+  <section id="kpr" class="max-w-7xl mx-auto px-6 py-24 border-b border-ember/10">
+    <div class="bg-ash rounded-3xl border border-ember/20 p-8 sm:p-14 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      
+      <div class="lg:col-span-7 space-y-6">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-ember font-bold block mb-1">Rencana Finansial</span>
+          <h2 class="font-serif text-4xl sm:text-5xl text-cream">Simulasi Angsuran Rumah</h2>
+          <p class="text-xs text-creamMuted mt-2 font-light">Sesuaikan harga unit, persentase uang muka (DP), dan durasi tenor sesuai preferensi Anda.</p>
+        </div>
+
+        <div class="space-y-6 text-xs">
+          <div>
+            <div class="flex justify-between font-medium mb-2">
+              <span class="text-creamMuted">Harga Properti</span>
+              <span id="label-price" class="text-cream font-serif text-lg font-bold">Rp 325.000.000</span>
+            </div>
+            <input type="range" id="kpr-price" min="185000000" max="500000000" step="5000000" value="325000000" oninput="runKpr()" class="w-full h-1.5 bg-charcoal rounded-lg appearance-none cursor-pointer accent-ember">
+          </div>
+
+          <div>
+            <div class="flex justify-between font-medium mb-2">
+              <span class="text-creamMuted">Uang Muka (DP)</span>
+              <span id="label-dp" class="text-cream font-serif text-lg font-bold">Rp 32.500.000 (10%)</span>
+            </div>
+            <input type="range" id="kpr-dp" min="0" max="25" step="5" value="10" oninput="runKpr()" class="w-full h-1.5 bg-charcoal rounded-lg appearance-none cursor-pointer accent-ember">
+          </div>
+
+          <div>
+            <div class="flex justify-between font-medium mb-2">
+              <span class="text-creamMuted">Jangka Waktu Tenor</span>
+              <span id="label-tenor" class="text-cream font-serif text-lg font-bold">20 Tahun</span>
+            </div>
+            <input type="range" id="kpr-tenor" min="5" max="25" step="5" value="20" oninput="runKpr()" class="w-full h-1.5 bg-charcoal rounded-lg appearance-none cursor-pointer accent-ember">
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 bg-charcoal/90 p-8 rounded-2xl border border-ember/20 text-center flex flex-col justify-between h-full shadow-2xl">
+        <div>
+          <span class="text-[11px] uppercase tracking-wider text-creamMuted block mb-1">Perkiraan Angsuran / Bulan</span>
+          <div id="result-cicilan" class="font-serif text-5xl font-bold text-ember my-4 tracking-tight">
+            Rp 2.190.000
+          </div>
+          <span class="text-[11px] text-creamMuted/70 block leading-relaxed">*Simulasi indikatif bunga 5% (subsidi) atau floating 7% (komersil).</span>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-white/5">
+          <a id="btn-wa-booking" href="#" target="_blank" class="block w-full py-4 rounded-xl bg-ember hover:bg-emberDark text-white font-semibold text-xs uppercase tracking-[0.2em] transition-all shadow-xl shadow-ember/25">
+            Konsultasikan Unit Ini
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. FAQ (PERTANYAAN SERING DIAJUKAN CALON KONSUMEN) -->
+  <section id="faq" class="max-w-4xl mx-auto px-6 py-24 border-b border-ember/10">
+    <div class="text-center mb-16">
+      <span class="text-xs uppercase tracking-[0.3em] font-semibold text-ember block mb-2">Pusat Informasi</span>
+      <h2 class="font-serif text-4xl sm:text-5xl text-cream">Pertanyaan yang Sering Diajukan</h2>
+      <p class="text-xs sm:text-sm text-creamMuted mt-2 font-light">Informasi penting seputar lokasi, legalitas, dan skema pembiayaan Jatimulya Residence.</p>
+    </div>
+
+    <div class="space-y-4">
+      <details class="bonfire-card rounded-2xl p-6 group cursor-pointer" open>
+        <summary class="flex justify-between items-center font-serif text-lg sm:text-xl text-cream font-medium list-none">
+          <span>Apakah kawasan Jatimulya Residence bebas dari potensi banjir?</span>
+          <span class="text-ember font-mono text-xl transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="text-xs text-creamMuted mt-4 leading-relaxed font-light">
+          Ya, perumahan Jatimulya Residence berada di dataran tinggi Klari yang bebas banjir dan telah mengantongi izin resmi Surat Peil Bebas Banjir nomor: <strong>503/3707/1089/PR/2023</strong> yang diterbitkan oleh instansi berwenang Kabupaten Karawang.
+        </p>
+      </details>
+
+      <details class="bonfire-card rounded-2xl p-6 group cursor-pointer">
+        <summary class="flex justify-between items-center font-serif text-lg sm:text-xl text-cream font-medium list-none">
+          <span>Apa keunggulan konsep Mezanin pada Type Lavender dan Ruby?</span>
+          <span class="text-ember font-mono text-xl transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="text-xs text-creamMuted mt-4 leading-relaxed font-light">
+          Konsep mezanin memanfaatkan ketinggian plafon (4.5 meter) untuk menciptakan lantai mezanin aktif di lantai dua tanpa harus membangun struktur dua lantai penuh yang membebani biaya. Area mezanin ini ideal dijadikan ruang kerja, ruang baca, ataupun kamar tidur ekstra.
+        </p>
+      </details>
+
+      <details class="bonfire-card rounded-2xl p-6 group cursor-pointer">
+        <summary class="flex justify-between items-center font-serif text-lg sm:text-xl text-cream font-medium list-none">
+          <span>Bagaimana skema pengajuan KPR untuk karyawan atau wiraswasta?</span>
+          <span class="text-ember font-mono text-xl transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="text-xs text-creamMuted mt-4 leading-relaxed font-light">
+          PT Berkah Aster Raya bekerja sama dengan bank penyalur resmi (seperti BTN, BSI, Mandiri, BRI). Tim marketing siap membantu mendampingi pemberkasan dari BI Checking / SLIK OJK hingga tahap akad kredit serah terima kunci.
+        </p>
+      </details>
+
+      <details class="bonfire-card rounded-2xl p-6 group cursor-pointer">
+        <summary class="flex justify-between items-center font-serif text-lg sm:text-xl text-cream font-medium list-none">
+          <span>Bagaimana cara menuju lokasi Jatimulya Residence jika ingin survei?</span>
+          <span class="text-ember font-mono text-xl transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <p class="text-xs text-creamMuted mt-4 leading-relaxed font-light">
+          Dari arah Jakarta/Cikampek, keluar melalui Gerbang Tol Karawang Timur lalu menuju koridor Klari - Kosambi ke arah Dusun Ciwadas Desa Jatimulya. Tim marketing bertugas siap menjemput atau menunggu langsung di kantor pemasaran lokasi setiap hari kerja maupun akhir pekan.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- 7. FOOTER BERSIH & WARM -->
+  <footer class="py-16 bg-charcoal text-xs text-creamMuted border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+      <div class="space-y-2">
+        <h4 class="font-serif text-2xl text-cream font-semibold">PT Berkah Aster Raya</h4>
+        <p class="text-xs text-creamMuted font-light leading-relaxed">
+          Pengembang properti terpercaya di Karawang. Berkomitmen menghadirkan pemukiman asri, terjangkau, dan bernilai investasi tinggi.
+        </p>
+      </div>
+
+      <div class="space-y-2">
+        <h5 class="text-xs uppercase tracking-widest text-ember font-semibold">Lokasi Proyek</h5>
+        <p class="text-xs text-creamMuted font-light leading-relaxed">
+          <strong>Jatimulya Residence</strong><br>
+          Dusun Ciwadas, Desa Jatimulya, Kec. Klari, Kabupaten Karawang, Jawa Barat.
+        </p>
+      </div>
+
+      <div class="space-y-2">
+        <h5 class="text-xs uppercase tracking-widest text-ember font-semibold">Customer Service & Marketing</h5>
+        <p class="text-xs text-creamMuted font-light leading-relaxed">
+          <strong>Ibu Eneng Juwita</strong><br>
+          WhatsApp: <a href="https://wa.me/6282121920741" target="_blank" class="text-goldFlame hover:underline font-mono">0821-2192-0741</a><br>
+          Senin – Minggu: 08.30 – 17.00 WIB (Siap dampingi survei lokasi).
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-creamMuted/60">
+      <p>© 2026 PT Berkah Aster Raya · Jatimulya Residence Klari Karawang.</p>
+      <p>Izin Peil Banjir: 503/3707/1089/PR/2023 · Hak Cipta Dilindungi</p>
+    </div>
+  </footer>
+
+  <!-- MOBILE FLOATING ACTION BAR FOR HIGHER CONVERSIONS -->
+  <div class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-charcoal/95 backdrop-blur-xl border-t border-ember/20 p-3 px-4 flex items-center justify-between gap-3 shadow-2xl">
+    <div class="leading-tight">
+      <span class="text-[10px] text-creamMuted block">Jatimulya Residence</span>
+      <span class="font-serif text-sm font-bold text-cream">Lavender & Ruby</span>
+    </div>
+    <div class="flex gap-2">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Jatimulya+Klari+Karawang" 
+         target="_blank" 
+         class="px-3 py-2 rounded-xl bg-ash border border-white/10 text-[11px] font-semibold text-cream flex items-center">
+        Maps
+      </a>
+      <a href="https://wa.me/6282121920741?text=Halo%20Ibu%20Eneng%20Juwita%20(PT%20Berkah%20Aster%20Raya),%20saya%20ingin%20info%20Jatimulya%20Residence%20Ciwadas%20Klari" 
+         target="_blank" 
+         class="px-4 py-2 rounded-xl bg-ember text-white text-[11px] font-bold uppercase tracking-wider shadow-lg shadow-ember/30">
+        Chat WA
+      </a>
+    </div>
+  </div>
+
+  <!-- SCRIPT LOGIC -->
+  <script>
+    // Swiper Carousel
+    new Swiper('.heroSwiper', {
+      loop: true,
+      speed: 900,
+      autoplay: { delay: 5000, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', clickable: true },
+    });
+
+    // Switch Architectural Floorplan (Lavender vs Ruby)
+    const planData = {
+      lavender: {
+        img: 'assets/plan_lavender_crop.jpg',
+        badge: 'KOMERSIL MEZZANINE · KAVLING 6 x 10 M',
+        title: 'Tata Letak Type LAVENDER 36/60',
+        desc: 'Pembagian ruang terintegrasi memaksimalkan sirkulasi udara dan cahaya alami tanpa sekat masif yang mempersempit ruangan.',
+        specLt1: 'Teras, Carport, 2 K. Tidur, 1 K. Mandi',
+        detailLt1: 'Carport mobil (4.5 meter) berdampingan dengan taman depan. Ruang keluarga terbuka mengalir ke ruang makan dan akses dapur belakang.',
+        specLt2: 'Ceiling 4.5 Meter + Railing Aman',
+        detailLt2: 'Area mezanin melayang di atas ruang keluarga. Memberikan ruang privat tambahan tanpa menambah beban biaya konstruksi 2 lantai penuh.',
+        waText: 'Halo Ibu Eneng Juwita (PT Berkah Aster Raya), saya ingin tanya detail denah Type Lavender 36/60'
+      },
+      ruby: {
+        img: 'assets/plan_ruby_crop.jpg',
+        badge: 'FLAGSHIP MEZZANINE · KAVLING 6 x 12 M',
+        title: 'Tata Letak Type RUBY 45/72',
+        desc: 'Kavling terluas dengan panjang tanah 12 meter. Menghadirkan ruang keluarga ekstra lega, halaman belakang ekspansif, dan mezzanine luas.',
+        specLt1: 'Carport Mobil, Teras, 2 K. Tidur Lega, Halaman Belakang',
+        detailLt1: 'Kamar tidur utama lebih luas dengan bukaan sirkulasi ganda. Area belakang siap dijadikan dapur bersih dan taman terbuka.',
+        specLt2: 'Mezanin Ekspansif + Void Pandang',
+        detailLt2: 'Lantai mezanin lebih lapang cocok untuk workspace, ruang baca, atau kamar tidur anak kedua dengan view langsung ke ruang tamu.',
+        waText: 'Halo Ibu Eneng Juwita (PT Berkah Aster Raya), saya ingin tanya detail denah Type Ruby 45/72'
+      }
+    };
+
+    function switchPlan(type) {
+      const data = planData[type];
+      document.getElementById('plan-img').src = data.img;
+      document.getElementById('plan-badge').innerText = data.badge;
+      document.getElementById('plan-title').innerText = data.title;
+      document.getElementById('plan-desc').innerText = data.desc;
+      document.getElementById('plan-spec-lt1').innerText = data.specLt1;
+      document.getElementById('plan-detail-lt1').innerText = data.detailLt1;
+      document.getElementById('plan-spec-lt2').innerText = data.specLt2;
+      document.getElementById('plan-detail-lt2').innerText = data.detailLt2;
+      document.getElementById('btn-wa-denah').href = `https://wa.me/6282121920741?text=${encodeURIComponent(data.waText)}`;
+
+      const btnLav = document.getElementById('tab-plan-lavender');
+      const btnRub = document.getElementById('tab-plan-ruby');
+      if (type === 'lavender') {
+        btnLav.className = "px-5 py-2.5 rounded-xl bg-ember text-white font-serif text-xs uppercase tracking-wider transition-all shadow-md";
+        btnRub.className = "px-5 py-2.5 rounded-xl text-creamMuted hover:text-white font-serif text-xs uppercase tracking-wider transition-all";
+      } else {
+        btnRub.className = "px-5 py-2.5 rounded-xl bg-ember text-white font-serif text-xs uppercase tracking-wider transition-all shadow-md";
+        btnLav.className = "px-5 py-2.5 rounded-xl text-creamMuted hover:text-white font-serif text-xs uppercase tracking-wider transition-all";
+      }
+    }
+
+    // KPR Calculator
+    function runKpr() {
+      const price = parseFloat(document.getElementById('kpr-price').value);
+      const dpPct = parseFloat(document.getElementById('kpr-dp').value);
+      const tenor = parseFloat(document.getElementById('kpr-tenor').value);
+
+      const dp = price * (dpPct / 100);
+      const principal = price - dp;
+
+      const rate = price <= 200000000 ? 0.05 : 0.07;
+      const r = rate / 12;
+      const n = tenor * 12;
+
+      const monthly = Math.round(principal * (r / (1 - Math.pow(1 + r, -n))));
+
+      document.getElementById('label-price').innerText = "Rp " + price.toLocaleString('id-ID');
+      document.getElementById('label-dp').innerText = "Rp " + dp.toLocaleString('id-ID') + ` (${dpPct}%)`;
+      document.getElementById('label-tenor').innerText = tenor + " Tahun";
+      document.getElementById('result-cicilan').innerText = "Rp " + monthly.toLocaleString('id-ID');
+
+      const waMsg = encodeURIComponent(`Halo Ibu Eneng Juwita (PT Berkah Aster Raya), saya tertarik dengan Jatimulya Residence Klari. Rincian simulasi: Harga Rp ${price.toLocaleString('id-ID')}, DP ${dpPct}%, Cicilan est. Rp ${monthly.toLocaleString('id-ID')}/bln.`);
+      document.getElementById('btn-wa-booking').href = `https://wa.me/6282121920741?text=${waMsg}`;
+    }
+
+    function setKprPrice(val) {
+      document.getElementById('kpr-price').value = val;
+      runKpr();
+      document.getElementById('kpr').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    runKpr();
+  </script>
+</body>
+</html>
